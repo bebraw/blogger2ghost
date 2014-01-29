@@ -1,5 +1,5 @@
 [![build status](https://secure.travis-ci.org/bebraw/blogger2ghost.png)](http://travis-ci.org/bebraw/blogger2ghost)
-# blogger2ghost - Blogspot JSON migrator plugin for Ghost"
+# blogger2ghost - Blogspot JSON migrator plugin for Ghost
 
 `blogger2ghost` allows you to convert your Blogspot blog content into [one compatible with Ghost](https://github.com/tryghost/Ghost/wiki/import-format).
 
