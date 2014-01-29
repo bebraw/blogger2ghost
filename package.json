@@ -1,6 +1,6 @@
 {
   "name": "blogger2ghost",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Blogspot JSON migrator plugin for Ghost",
   "main": "index",
   "repository": {
