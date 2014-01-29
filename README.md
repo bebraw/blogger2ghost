@@ -7,6 +7,8 @@
 
 1. Get posts in JSON format from your blog using `<your blog>/feeds/posts/default?alt=json&max-results=10000` and save it to some file (say `data.json`)
 2. ./index.js -i data.json > ghost.json
+3. Surf to `ghost/debug/` at your blog
+4. Use `Import` controls to import the data to your blog
 
 ## License
 

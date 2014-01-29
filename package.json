@@ -19,10 +19,10 @@
     "url": "https://raw.github.com/bebraw/blogger2ghost/master/LICENSE"
   },
   "dependencies": {
-    "async": "0.2.10",
     "to-markdown": "0.0.1",
-    "request": "2.33.0",
-    "moment": "2.5.1",
-    "commander": "~2.1.0"
+    "commander": "~2.1.0",
+    "change-case": "~1.0.4",
+    "annofp": "~0.2.1",
+    "annois": "~0.3.0"
   }
 }
