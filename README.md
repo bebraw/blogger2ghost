@@ -6,10 +6,11 @@
 ## Usage
 
 1. Get posts in JSON format from your blog using `<your blog>/feeds/posts/default?alt=json&max-results=10000` and save it to some file (say `data.json`)
-2. ./index.js -i data.json > ghost.json
+2. `npm install blogger2ghost -g`. Alternatively you can install and invoke it as a library (ie. `npm install blogger2ghost` and `node_modules/blogger2ghost -i data.json`)
+2. `blogger2ghost -i data.json > ghost.json`
 3. Surf to `ghost/debug/` at your blog
 4. Use `Import` controls to import the data to your blog
 
 ## License
 
-`annofuzz` is available under MIT. See LICENSE for more details.
+`blogger2ghost` is available under MIT. See LICENSE for more details.
