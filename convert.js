@@ -47,6 +47,10 @@ module.exports = function(input) {
         };
     });
     var postsTags = flatten(json.feed.entry.map(function(post, i) {
+        if(!is.array(post.category)) {
+            return [];
+        }
+
         return post.category.map(function(category) {
             var term = category.term;
             var tagId = tagIds[term];
