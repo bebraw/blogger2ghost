@@ -1,0 +1,28 @@
+{
+  "name": "blogger2ghost",
+  "version": "0.0.0",
+  "description": "Blogspot JSON migrator plugin for Ghost",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bebraw/blogger2ghost.git"
+  },
+  "keywords": [
+    "ghost",
+    "blog",
+    "import",
+    "importer"
+  ],
+  "author": "Juho Vepsalainen <bebraw@gmail.com> (http://nixtu.info)",
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/bebraw/blogger2ghost/master/LICENSE"
+  },
+  "dependencies": {
+    "async": "0.2.10",
+    "to-markdown": "0.0.1",
+    "request": "2.33.0",
+    "moment": "2.5.1",
+    "commander": "~2.1.0"
+  }
+}
