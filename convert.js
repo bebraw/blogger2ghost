@@ -5,6 +5,10 @@ var tomd = require('to-markdown').toMarkdown;
 
 
 module.exports = function(json) {
+    if(!json.feed) {
+        return {};
+    }
+
     var posts = json.feed.entry? json.feed.entry.map(function(post, i) {
         var title = post.title['$t'];
         var html = post.content['$t'];
