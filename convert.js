@@ -5,7 +5,7 @@ var tomd = require('to-markdown').toMarkdown;
 
 
 module.exports = function(json) {
-    var posts = json.feed.entry.map(function(post, i) {
+    var posts = json.feed.entry? json.feed.entry.map(function(post, i) {
         var title = post.title['$t'];
         var html = post.content['$t'];
         var published = Date.parse(post.published['$t']);
@@ -31,7 +31,7 @@ module.exports = function(json) {
             'published_at': published,
             'published_by': 1
         };
-    });
+    }): [];
     var tagIds = {};
     var tags = json.feed.category? json.feed.category.map(function(category, i) {
         var name = category.term;
