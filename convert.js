@@ -33,7 +33,7 @@ module.exports = function(json) {
         };
     });
     var tagIds = {};
-    var tags = json.feed.category.map(function(category, i) {
+    var tags = json.feed.category? json.feed.category.map(function(category, i) {
         var name = category.term;
 
         tagIds[name] = i;
@@ -44,7 +44,7 @@ module.exports = function(json) {
             slug: snakeCase(name),
             description: ''
         };
-    });
+    }): [];
     var postsTags = flatten(json.feed.entry.map(function(post, i) {
         if(!is.array(post.category)) {
             return [];
