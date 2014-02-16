@@ -45,7 +45,7 @@ module.exports = function(json) {
             description: ''
         };
     }): [];
-    var postsTags = flatten(json.feed.entry.map(function(post, i) {
+    var postsTags = json.feed.entry? flatten(json.feed.entry.map(function(post, i) {
         if(!is.array(post.category)) {
             return [];
         }
@@ -65,7 +65,7 @@ module.exports = function(json) {
                 'post_id': i
             };
         });
-    }));
+    })): [];
 
     return {
         meta: {
