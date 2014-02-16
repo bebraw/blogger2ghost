@@ -4,13 +4,7 @@ var is = require('annois');
 var tomd = require('to-markdown').toMarkdown;
 
 
-module.exports = function(input) {
-    var json = loadJSON(input);
-
-    if(!json) {
-        return console.error('Failed to load input JSON');
-    }
-
+module.exports = function(json) {
     var posts = json.feed.entry.map(function(post, i) {
         var title = post.title['$t'];
         var html = post.content['$t'];
@@ -85,15 +79,3 @@ module.exports = function(input) {
         }
     };
 };
-
-function loadJSON(input) {
-    try {
-        return require(input);
-    }
-    catch(e) {
-        try {
-            return require('./' + input);
-        }
-        catch(e) {}
-    }
-}

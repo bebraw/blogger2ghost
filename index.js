@@ -17,6 +17,23 @@ function main() {
         return console.error('Missing input file! Pass it using -i parameter');
     }
 
-    console.log(JSON.stringify(convert(program.input)));
+    var json = loadJSON(program.input);
+
+    if(!json) {
+        return console.error('Failed to load input JSON');
+    }
+
+    console.log(JSON.stringify(convert(json)));
 }
 
+function loadJSON(input) {
+    try {
+        return require(input);
+    }
+    catch(e) {
+        try {
+            return require('./' + input);
+        }
+        catch(e) {}
+    }
+}
