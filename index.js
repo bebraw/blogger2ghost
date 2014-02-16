@@ -2,6 +2,7 @@
 var program = require('commander');
 
 var convert = require('./convert');
+var loadJSON = require('./load_json');
 
 var VERSION = require('./package.json').version;
 
@@ -24,16 +25,4 @@ function main() {
     }
 
     console.log(JSON.stringify(convert(json)));
-}
-
-function loadJSON(input) {
-    try {
-        return require(input);
-    }
-    catch(e) {
-        try {
-            return require('./' + input);
-        }
-        catch(e) {}
-    }
 }
