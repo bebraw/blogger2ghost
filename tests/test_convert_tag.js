@@ -9,5 +9,6 @@ suite(convertTag, [
     'another self help', 'another_self_help',
     'another-self-help', 'another__self__help',
     'SciFi', 'sci_fi',
+    'SciFiToo', 'sci_fi_too',
     'sci-fi', 'sci__fi'
 ]);
