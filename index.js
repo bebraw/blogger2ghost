@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 var program = require('commander');
 
-var convert = require('./convert');
-var loadJSON = require('./load_json');
+var convert = require('./lib/convert');
+var loadJSON = require('./lib/load_json');
 
 var VERSION = require('./package.json').version;
 
@@ -18,11 +18,12 @@ function main() {
         return console.error('Missing input file! Pass it using -i parameter');
     }
 
-    var json = loadJSON(program.input);
+    loadJSON(program.input, function(err, json) {
+        if(err) {
+            return console.error('Failed to load input JSON');
+        }
 
-    if(!json) {
-        return console.error('Failed to load input JSON');
-    }
-
-    console.log(JSON.stringify(convert(json)));
+        console.log(JSON.stringify(convert(json)));
+    });
 }
+

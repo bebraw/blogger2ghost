@@ -2,7 +2,7 @@
   "name": "blogger2ghost",
   "version": "0.1.6",
   "description": "Blogspot JSON migrator plugin for Ghost",
-  "main": "./convert.js",
+  "main": "./lib/convert.js",
   "bin": "./index.js",
   "repository": {
     "type": "git",

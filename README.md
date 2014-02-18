@@ -14,3 +14,4 @@
 ## License
 
 `blogger2ghost` is available under MIT. See LICENSE for more details.
+
