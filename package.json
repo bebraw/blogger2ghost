@@ -19,11 +19,18 @@
     "type": "MIT",
     "url": "https://raw.github.com/bebraw/blogger2ghost/master/LICENSE"
   },
+  "scripts": {
+    "test": "node tests"
+  },
   "dependencies": {
     "to-markdown": "0.0.1",
     "commander": "~2.1.0",
     "change-case": "~1.0.4",
     "annofp": "~0.2.1",
     "annois": "~0.3.0"
+  },
+  "devDependencies": {
+    "require-dir": "~0.1.0",
+    "suite.js": "~0.6.1"
   }
 }

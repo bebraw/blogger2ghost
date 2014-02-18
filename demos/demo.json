@@ -22,7 +22,7 @@
         "term": "programming"
       },
       {
-        "term": "web development"
+        "term": "web-development"
       },
       {
         "term": "python"
@@ -120,7 +120,7 @@
           },
           {
             "scheme": "http://www.blogger.com/atom/ns#",
-            "term": "web development"
+            "term": "web-development"
           }
         ],
         "title": {
@@ -190,7 +190,7 @@
           },
           {
             "scheme": "http://www.blogger.com/atom/ns#",
-            "term": "web development"
+            "term": "web-development"
           }
         ],
         "title": {
