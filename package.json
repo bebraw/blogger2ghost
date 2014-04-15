@@ -23,12 +23,12 @@
     "test": "node tests"
   },
   "dependencies": {
-    "to-markdown": "0.0.1",
-    "commander": "~2.1.0",
-    "change-case": "~1.0.4",
     "annofp": "~0.2.1",
     "annois": "~0.3.0",
-    "unidecode": "0.1.3"
+    "change-case": "~1.0.4",
+    "commander": "~2.1.0",
+    "unidecode": "0.1.3",
+    "upndown": "0.0.5"
   },
   "devDependencies": {
     "require-dir": "~0.1.0",
