@@ -29,6 +29,10 @@ convert({...}, function(data, post) {
 });
 ```
 
+## Contributors
+
+* [ekaragodin](https://github.com/ekaragodin) - Fixed post import with non latin titles and tags
+
 ## License
 
 `blogger2ghost` is available under MIT. See LICENSE for more details.
