@@ -12,6 +12,7 @@ main();
 function main() {
     program.version(VERSION).
         option('-i --input <input file>').
+        option('-a --authors <authors file>').
         parse(process.argv);
 
     if(!program.input) {
@@ -23,7 +24,15 @@ function main() {
             return console.error('Failed to load input JSON');
         }
 
-        console.log(JSON.stringify(convert(json)));
+        loadJSON(program.authors, function(err, authors) {
+            if(err) {
+                console.warn('Authors JSON not specified or invlaid');
+            }
+
+            json.authors = authors || {};
+
+            console.log(JSON.stringify(convert(json)));
+        });
     });
 }
 
