@@ -1,2 +1,8 @@
 node_modules/
 *.swp
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.json
+!package.json

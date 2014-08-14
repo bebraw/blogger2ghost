@@ -29,7 +29,8 @@
     "cheerio": "^0.15.0",
     "commander": "~2.1.0",
     "to-markdown": "0.0.1",
-    "unidecode": "0.1.3"
+    "unidecode": "0.1.3",
+    "download": "^0.2.4"
   },
   "devDependencies": {
     "require-dir": "~0.1.0",
