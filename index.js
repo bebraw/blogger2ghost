@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 var program = require('commander');
 
@@ -57,7 +58,7 @@ function runTask(json, program, authors) {
             console.log(JSON.stringify(result));
         });
 
-    } else {                
+    } else {
         console.log(JSON.stringify(result));
-    }    
+    }
 }
