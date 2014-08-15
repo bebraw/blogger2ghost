@@ -55,7 +55,10 @@ This will download all images from existing Blogger posts and place them into a 
 ```js
 var convert = require('blogger2ghost');
 
-convert({...}, function(data, post) {
+// json to convert goes to first
+// options (authors etc.) go to second param
+// extension callback as third
+convert({...}, {}, function(data, post) {
     // manipulate data based on post fields (see blogger data content above)
     // you can see data fields available at https://github.com/tryghost/Ghost/wiki/import-format
     
