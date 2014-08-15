@@ -69,7 +69,7 @@ convert({...}, function(data, post) {
 ## Contributors
 
 * [ekaragodin](https://github.com/ekaragodin) - Fixed post import with non latin titles and tags
-* [homerjam](https://github.com/homerjam) - Prettification of the output
+* [homerjam](https://github.com/homerjam) - Prettification of the output, support for multiple authors and downloading images
 
 ## License
 
