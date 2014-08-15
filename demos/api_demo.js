@@ -12,7 +12,7 @@ function main() {
             return console.error(err);
         }
 
-        console.log(JSON.stringify(convert(json, extension)));
+        console.log(JSON.stringify(convert(json, {}, extension)));
     });
 }
 
