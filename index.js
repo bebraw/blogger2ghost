@@ -12,9 +12,11 @@ main();
 
 function main() {
     program.version(VERSION)
-        .option('-i --input <input file>')
-        .option('-a --authors <authors file>')
-        .option('-d --download <download location>')
+        .option('-i, --input <input file>', 'JSON file from Blogger')
+        .option('-a, --authors <authors file>', 'JSON file of authors - see README')
+        .option('-d, --download <download folder>', 'Folder to be created and populated with images')
+        .option('-l, --download-limit <connections number>', 'Concurrent connections limit, default: 5')
+        .option('-t, --remove-tables', 'Remove tables from posts')
         .parse(process.argv);
 
     if (!program.input) {
@@ -42,15 +44,14 @@ function main() {
 }
 
 function runTask(json, program, authors) {
-    var result = convert(json, {
-        authors: authors || {},
-        download: program.download
-    });
+    program.authors = authors || {};
+
+    var result = convert(json, program);
 
     if (result.images && program.download) {
         console.warn('Downloading ' + result.images.length + ' images, this may take some time');
 
-        download(program.download, result.images, function() {
+        download(program.download, result.images, program.downloadLimit || 5, function() {
             delete result.images;
 
             console.log(JSON.stringify(result));

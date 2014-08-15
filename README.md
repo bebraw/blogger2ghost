@@ -18,6 +18,10 @@
 
 ### Advanced
 
+**Remove tables from posts:**
+
+`$ blogger2ghost -i data.json > ghost.json --remove-tables`
+
 **Supply authors for multi-user Ghost:**
 
 This will attribute imported posts to existing users, you should first create the users within Ghost.
@@ -43,7 +47,7 @@ This will attribute imported posts to existing users, you should first create th
 This will download all images from existing Blogger posts and place them into a directory ready for upload to Ghost. It will also replace urls with normalised paths that will load from the local `content` directory of Ghost.
 
     # 'blogger-images' directory will be created
-    $ blogger2ghost -i data.json > ghost.json -d blogger-images
+    $ blogger2ghost -i data.json > ghost.json -d blogger-images --download-limit 10
 
 
 ### Custom
