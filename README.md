@@ -11,7 +11,7 @@
 1. Get posts in JSON format from your blog using `<your blog>/feeds/posts/default?alt=json&max-results=10000` and save it to some file (eg. `data.json`)
 2. `$ npm install blogger2ghost -g`
 2. `$ blogger2ghost -i data.json > ghost.json`
-3. Surf to `ghost/debug/` at your blog
+3. Surf to `ghost/settings/labs` at your blog
 4. Use `Import` controls to import the data to your blog
 
 > Alternatively you can install and invoke it as a library (ie. `$ npm install blogger2ghost` and `node_modules/blogger2ghost -i data.json`)
