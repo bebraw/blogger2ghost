@@ -18,6 +18,7 @@ function main() {
         .option('-d, --download <download folder>', 'Folder to be created and populated with images')
         .option('-l, --download-limit <connections number>', 'Concurrent connections limit, default: 5')
         .option('-t, --remove-tables', 'Remove tables from posts')
+        .option('-s --strip-diacritics', 'Strip diacritics from tags')
         .parse(process.argv);
 
     if (!program.input) {
