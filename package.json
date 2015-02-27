@@ -23,18 +23,18 @@
     "test": "node tests"
   },
   "dependencies": {
-    "annofp": "~0.2.1",
-    "annois": "~0.3.0",
-    "change-case": "~1.0.4",
-    "cheerio": "^0.15.0",
-    "commander": "~2.1.0",
-    "to-markdown": "0.0.1",
-    "unidecode": "0.1.3",
-    "download": "^0.2.4",
+    "annofp": "^0.4.2",
+    "annois": "^0.3.2",
+    "change-case": "^2.2.0",
+    "cheerio": "^0.18.0",
+    "commander": "^2.6.0",
+    "to-markdown": "^0.0.3",
+    "unidecode": "^0.1.3",
+    "download": "^4.0.1",
     "async": "^0.9.0"
   },
   "devDependencies": {
-    "require-dir": "~0.1.0",
-    "suite.js": "~0.6.1"
+    "require-dir": "^0.1.0",
+    "suite.js": "^0.6.1"
   }
 }
