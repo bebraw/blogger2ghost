@@ -8,6 +8,7 @@
 
 ### Basic
 
+1. Set your blog's feed to **Full** in your Blogger.com dashboard: **Settings | Other | Allow Blog Feed**
 1. Get posts in JSON format from your blog using `<your blog>/feeds/posts/default?alt=json&max-results=10000` and save it to some file (eg. `data.json`)
 2. `$ npm install blogger2ghost -g`
 2. `$ blogger2ghost -i data.json > ghost.json`
