@@ -19,6 +19,7 @@ function main() {
         .option('-l, --download-limit <connections number>', 'Concurrent connections limit, default: 5')
         .option('-t, --remove-tables', 'Remove tables from posts')
         .option('-s --strip-diacritics', 'Strip diacritics from tags')
+        .option('-h --raw-html', 'Don\'t convert HTML to Markdown')
         .parse(process.argv);
 
     if (!program.input) {
