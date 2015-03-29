@@ -62,7 +62,7 @@ var convert = require('blogger2ghost');
 convert({...}, {}, function(data, post) {
     // manipulate data based on post fields (see blogger data content above)
     // you can see data fields available at https://github.com/tryghost/Ghost/wiki/import-format
-    
+
     ...
 
     // once you are done with manipulation, return result
@@ -74,6 +74,7 @@ convert({...}, {}, function(data, post) {
 
 * [ekaragodin](https://github.com/ekaragodin) - Fixed post import with non latin titles and tags
 * [homerjam](https://github.com/homerjam) - Prettification of the output, support for multiple authors and downloading images
+* [Mark Baird](https://github.com/markbaird) - Download images correctly, fix duplicate tags and allow post content to be left in HTML format
 
 ## License
 
