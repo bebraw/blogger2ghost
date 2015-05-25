@@ -75,6 +75,7 @@ convert({...}, {}, function(data, post) {
 * [ekaragodin](https://github.com/ekaragodin) - Fixed post import with non latin titles and tags
 * [homerjam](https://github.com/homerjam) - Prettification of the output, support for multiple authors and downloading images
 * [Mark Baird](https://github.com/markbaird) - Download images correctly, fix duplicate tags and allow post content to be left in HTML format
+* [Murphy Randle](https://github.com/murphyrandle) - Update `to-markdown` to use correct invocation
 
 ## License
 
